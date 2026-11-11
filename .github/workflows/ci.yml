@@ -24,10 +24,10 @@ jobs:
       - name: CLI smoke test
         run: python -m lattice.cli demo
 
-        # The examples are the first thing a visitor runs and nothing was
-        # checking them. All four repositories here had at least one example
-        # that failed from a fresh clone.
-        - name: Run examples
-          run: |
-            python examples/demo.py
-            python examples/near_duplicate.py
+      # The examples are the first thing a visitor runs and nothing was
+      # checking them. All four repositories here had at least one example
+      # that failed from a fresh clone.
+      - name: Run examples
+        run: |
+          python examples/demo.py
+          python examples/near_duplicate.py
